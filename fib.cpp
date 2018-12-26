@@ -25,7 +25,7 @@ const _uint_ fibTo40 [] = { 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 3
 //          $argv[1] will be converted to an
 //          integer and stored here.
 // return : true if $argv[1] exists and successfully converts to an integer,
-//          false otherwise
+//          false otherwise.
 bool validInput(int const & argc, char ** const argv, int & n) {
     if (argc < 2) {
         return false;
@@ -73,7 +73,7 @@ int main(int argc, char ** argv) {
     int n;
     if (!validInput(argc, argv, n)) {
         std::cout << "Please provide a valid command line argument.\n"
-                  << "Valid arguments numbers greater than or equal to 0.\n";
+                  << "Valid arguments are numbers greater than or equal to 0.\n";
         return EXIT_FAILURE;
     }
 
