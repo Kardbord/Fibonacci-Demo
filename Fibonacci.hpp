@@ -5,7 +5,8 @@
 
 namespace Fibonacci {
   enum class FibStrat : uint32_t {
-    RECURSIVE
+    RECURSIVE,
+    DYNAMIC
   };
 
   auto fibStratStr(const FibStrat impl) -> std::string;
